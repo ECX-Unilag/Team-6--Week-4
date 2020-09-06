@@ -122,12 +122,14 @@ class CategorySerializer(serializers.HyperlinkedModelSerializer):
 
 
 class ImageSerializers(serializers.HyperlinkedModelSerializer):
+
     class Meta:
         model = Image
         fields = ['url', 'id', 'category', 'name', 'image_description', 'image']
 
 
 class VideoSerializers(serializers.HyperlinkedModelSerializer):
+
     class Meta:
         model = Video
         fields = ['url', 'id', 'category', 'name', 'video_description', 'video_link']
